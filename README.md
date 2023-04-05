@@ -141,7 +141,7 @@ You also need an IBM Cloud container registry namespace (see https://cloud.ibm.c
 
 10. You can see your sample running on Kubernetes in IBM Cloud.
    
-    `open http://{CLUSTER_ENDPOINT}:30000`
+    `open http://169.51.204.237:30000`
 
 ## Clarification
 This sample runs on one instance and uses the session to store the authorization data.
