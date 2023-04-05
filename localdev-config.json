@@ -4,5 +4,5 @@
   "profilesUrl": "https://us-south.appid.cloud.ibm.com",
   "secret": "M2ZjZTVhYWEtMTk4My00YWNlLTgxNTQtN2IxZmVjZjBmY2Q4",
   "tenantId": "0737feec-ce57-49a3-9c32-22827acdf325",
-  "redirectUri": "http://localhost:3000/ibm/cloud/appid/callback"
+  "redirectUri": "https://test-80dd.onrender.com/ibm/cloud/appid/callback"
 }
