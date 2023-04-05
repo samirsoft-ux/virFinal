@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
    name: appid-sample-deployment
-   namespace: default
+   namespace: kube-public
 spec:
    revisionHistoryLimit: 10
    minReadySeconds: 10
@@ -19,12 +19,12 @@ spec:
       spec:
          containers:
          - name: appid-sample
-           image: "{REGISTRY_DOMAIN}/{REPOSITORY_NAMESPACE}/appid-node-sample:{APP_VERSION}" # <-- edit here
+           image: "us.icr.io/rtwperu/appid-node-sample:1" # <-- edit here
            ports:
            - containerPort: 80
            env:
            - name: redirectUri
-             value: "http://{CLUSTER_ENDPOINT}:30000/ibm/cloud/appid/callback" # <-- edit here
+             value: "169.51.204.237:30000/ibm/cloud/appid/callback" # <-- edit here
            - name: APPID_SERVICE_BINDING
              valueFrom:
                secretKeyRef:
