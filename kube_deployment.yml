@@ -25,7 +25,7 @@ spec:
       spec:
          containers:
          - name: appid-sample
-           image: "us.icr.io/rtwperu/appid-node-sample:1" # <-- edit here
+           image: "italo1silva/public:1" # <-- edit here
            ports:
            - containerPort: 80
            env:
