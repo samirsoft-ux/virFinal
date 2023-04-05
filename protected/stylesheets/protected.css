@@ -34,12 +34,18 @@ body {
 }
 
 #backgroundPart{
-    background: url(images/IBMPeruBrilla.jpg) no-repeat center center fixed;
+    background: url(images/background_planes.jpg) no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
     width: 100%;
     background-size: cover;
+}
+.landing-text {
+    color: #fff;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .bottom-container {
