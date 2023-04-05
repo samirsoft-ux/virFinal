@@ -33,6 +33,15 @@ body {
     margin-bottom: 46px;
 }
 
+#backgroundPart{
+    background: url(images/IBMPeruBrilla.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
 .bottom-container {
     background: #F5F7FA;
     box-shadow: 0 2px 2px 0 rgba(140, 155, 165, 0.25);
