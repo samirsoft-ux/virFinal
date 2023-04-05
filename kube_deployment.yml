@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
    name: appid-sample-deployment
    namespace: kube-public
+   labels:
+    app: appid-sample
 spec:
    revisionHistoryLimit: 10
    minReadySeconds: 10
@@ -12,10 +14,14 @@ spec:
          maxUnavailable: 0
          maxSurge: 3
    replicas: 1
+   selector:
+    matchLabels:
+      app: appid-sample
    template:
       metadata:
          labels:
             microservice: appid-sample
+            app: appid-sample
       spec:
          containers:
          - name: appid-sample
