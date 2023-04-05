@@ -28,7 +28,7 @@ spec:
            - name: APPID_SERVICE_BINDING
              valueFrom:
                secretKeyRef:
-                 name: binding-{APP_ID_INSTANCE_NAME} # <-- edit here
+                 name: binding-ID-Vir # <-- edit here
                  key: binding
 ---
 apiVersion: v1
